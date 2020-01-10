@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Form </title>
+</head>
+<body>
+    <form method="POST" action="update/{{flight.id}}">
+        {% csrf_token %}
+        Update origin: <input name="flight_origin" type="text" value ={{flight.origin}}> <br>
+        Update destination: <input name="flight_destination" type="text" value={{flight.destination}}> <br>
+        Update duration: <input name="flight_duration" type="text" value={{flight.duration}}> <br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

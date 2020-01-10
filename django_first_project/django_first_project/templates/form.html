@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="add" >
+        <label>Enter name</label>
+        <input type="text" name="personname"><br>
+        <input type="submit">
+    </form>
+
+    {% if personnamekey %}
+        <h1>{{ personnamekey }}</h1>
+    {% endif %}
+</body>
+</html>
