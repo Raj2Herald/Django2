@@ -27,7 +27,8 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path('firstapp/',include('firstapp.urls'))
+    path('firstapp/',include('firstapp.urls')),
+    path('api/',include('restapi.urls')),
 ]
 
 
